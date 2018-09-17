@@ -53,7 +53,7 @@ namespace TestsAutomationPractice
         public void SetNewClientPersonalInfo()
         {
             SignInPage signIn = new SignInPage(BaseTest.driver);
-            signIn.SetGenderFemale(gender); /* False is to Mr. ~ True is to Mrs. */
+            signIn.SetGenderFemale(gender); 
             signIn.SetName(firstname, lastname);
             signIn.SetLogin(user_email, passwd);
             signIn.SetDateBirth(day_birth, month_birth, year_birth);
